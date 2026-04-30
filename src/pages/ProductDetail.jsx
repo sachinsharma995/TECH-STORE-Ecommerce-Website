@@ -26,7 +26,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <div className="mx-auto px-4 pt-0 min-xl">
+      <div className="container mx-auto px-4 flex justify-center">
         <div className="bg-gray-900 rounded-2xl shadow-2xl my-8 p-6 md:p-12 border border-gray-800 min-h-screen">
           <Link to={"/"}>
             <button
@@ -38,17 +38,17 @@ const ProductDetail = () => {
             </button>
           </Link>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
-            <div className="w-full ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="w-full flex justify-center ">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-[360px] h-[360px] object-cover rounded-2xl shadow-2xl
+                className="w-full max-w-sm h-auto object-cover rounded-2xl shadow-2xl
               shadow-gray-950/50 border-4 border-gray-800"
               />
             </div>
 
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between text-center lg:text-left">
               <div>
                 <h1 className="text-4xl font-extrabold text-white mb-4 leading-tight tracking-tighter ">
                   {product.name}

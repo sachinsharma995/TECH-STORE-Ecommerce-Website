@@ -14,14 +14,14 @@ const {cart , cartTotal , cartCount} = useCart();
         <div className="flex items-center mb-10">
            <Link to={"/"} className="flex items-center text-gray-400 hover:text-orange-400 transition duration-150
            font-semibold text-lg">
-            <ChevronLeft className="w-6 h-6 ml-14 "/>
+            <ChevronLeft className="w-6 h-6"/>
             <span>Back to Store</span>
            </Link>
         </div>
 
-        <h2 className="text-4xl font-extrabold text-white mb-10 tracking-tight pl-14">Shopping Cart ({cartCount})</h2>
+        <h2 className="text-4xl font-extrabold text-white mb-10 tracking-tight pl-4">Shopping Cart ({cartCount})</h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 pl-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 space-y-4 ">
             {cart.map(item =><CartItem key={item.id} item={item}/> )}
           </div>

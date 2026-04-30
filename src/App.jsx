@@ -28,7 +28,7 @@ function App() {
         />
         <div className="min-h-screen flex flex-col bg-gray-950 font-sans">
           <Navbar />
-
+            
           <Routes>
             <Route path="/" element={<ProductList />} />
             <Route path="/product/:id" element={<ProductDetail />} />

@@ -10,7 +10,7 @@ const navbar = () => {
   return (
     <>
     <header className="sticky top-0 z-50 bg-gray-950/95 backdrop-blur-md text-white shadow-2xl shadow-gray-950/70 border-b border-orange-900">
-        <div className="container mx-auto px-28 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 md:px-10 py-3 flex justify-between items-center">
            <Link to={"/"}>
             <div className="flex items-center space-x-3 cursor-pointer">
                <House className='w-8 h-8 text-orange-400 drop-shadow-lg'/>
